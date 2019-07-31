@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/x15">
+
+    <LinearLayout
+        android:id="@+id/llyt_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易账号" />
+
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入交易账号"
+             />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合约名称" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入合约名称"
+             />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成本" />
+
+
+        <EditText
+            android:id="@+id/et_chengbenjia"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入成本价"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现价" />
+
+
+        <EditText
+            android:id="@+id/et_xianjia"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入现价"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="持仓手数" />
+
+
+        <EditText
+            android:id="@+id/et_chicang"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入持仓手数"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总权益" />
+
+
+        <EditText
+            android:id="@+id/et_zongquanyi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入总权益"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y5"
+        android:background="#ededed"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:layout_marginTop="@dimen/y10"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保证金" />
+
+
+        <EditText
+            android:id="@+id/et_baozhengjin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入保证金"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_marginTop="@dimen/y5"
+        android:background="#ededed"></View>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="@dimen/x200"
+        android:layout_height="@dimen/y45"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y10"
+        android:text="保存" />
+
+
+</LinearLayout>
