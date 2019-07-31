@@ -6,7 +6,7 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataUtils {
+public class OutDataUtils {
 
 
     /**
@@ -55,15 +55,6 @@ public class DataUtils {
         return formatDouble((chengben * chicang) * 10000);
     }
 
-    /**
-     * 成本=  成本价 x 持仓
-     * ceshi
-     * @return
-     */
-    public static String getOutChengbenText(double chengben, int chicang) {
-        return formatDouble((chengben * chicang) * 10000 );
-    }
-
 
     /**
      * 市值 = 现价 x 持仓数
@@ -76,12 +67,6 @@ public class DataUtils {
 
         return formatDouble2a((xianjia * chicang) * 10000);
     }
-
-    public static String getOutShizhiText(double xianjia, int chicang) {
-
-        return formatDouble2a((xianjia * chicang) * 10000 * -1);
-    }
-
 
 
     /**
@@ -98,13 +83,6 @@ public class DataUtils {
         return formatDouble3((xianjia - chengben) * 10000 * chicang);
     }
 
-    public static String getOutYingkuiText(double xianjia, double chengben, int chicang) {
-        double chengbenjia = chengben * chicang * 10000;
-        double shizhi = xianjia * chicang * 10000 * -1;
-        double yingkui = shizhi - chengbenjia;
-        return formatDouble3(yingkui);
-    }
-
 
     /**
      * 百分比  (现价- 成本)/成本价
@@ -118,13 +96,6 @@ public class DataUtils {
         return result;
     }
 
-    public static String getOutBaifenbiText(double chengben,double xianjia,int chicang) {
-        double chengbenjia = chengben * chicang * 10000;
-        double shizhi = xianjia * chicang * 10000 * -1;
-        double yingkui = shizhi - chengbenjia;
-        String result = formatBaifen(yingkui / chengbenjia) + "%";
-        return result;
-    }
 
     /**
      * 持仓盈亏
@@ -235,7 +206,7 @@ public class DataUtils {
             return "0.00";
         }
 
-        java.text.DecimalFormat df = new java.text.DecimalFormat("#.00");
+        DecimalFormat df = new DecimalFormat("#.00");
         return df.format(value);
 
 
